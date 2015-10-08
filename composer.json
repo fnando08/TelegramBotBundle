@@ -1,33 +1,34 @@
 {
-  "name": "irazasyed/telegram-bot-sdk",
-  "description": "The Unofficial Telegram Bot API PHP SDK",
-  "keywords": ["telegram", "telegram bot", "telegram bot api", "telegram sdk", "telegram php", "laravel telegram", "laravel"],
-  "type": "library",
-  "homepage": "https://github.com/irazasyed/telegram-bot-sdk",
-  "license": "BSD-3-Clause",
-  "authors": [
-    {
-      "name": "Syed Irfaq R.",
-      "email": "syed+gh@lukonet.com",
-      "homepage": "https://github.com/irazasyed"
+    "name": "fnando08/telegram-bot-bundle",
+    "homepage": "https://github.com/fnando08/TelegramBotBundle",
+    "type": "symfony-bundle",
+    "description": "Simple a HTTP Wrapper for Telegram",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fnando08",
+            "email": "fnando08@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.1",
+        "mattketmo/camel": "^1.1"
+    },
+    "require-dev": {
+        "raulfraile/ladybug": "^1.0"
+    },
+     "autoload": {
+        "psr-4": {
+            "Fpradas\\TelegramBotBundle\\": ""
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
-  ],
-  "require": {
-    "php": ">=5.5.0",
-    "guzzlehttp/guzzle": "~6.0",
-    "illuminate/support": "5.0.*|5.1.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Telegram\\Bot\\": "src/"
-    }
-  },
-  "suggest": {
-    "irazasyed/larasupport": "Allows you to use any Laravel Package in Lumen by adding support!"
-  },
-  "extra": {
-      "branch-alias": {
-          "dev-master": "1.0-dev"
-      }
-  }
 }
